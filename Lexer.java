@@ -67,4 +67,14 @@ public final class Lexer {
        }
     }
 
+    //the error class => thrown when input contains non valid SPL token
+    public static final class LexException extends RuntimeException {
+        public final int line, col; //problem line
+        public LexException(String msg, int line, int col) {
+            super("Lexical error at line " + line + ", column " + col + ": " + msg);
+            this.line = line;
+            this.col = col;
+        }
+    }
+
 }
