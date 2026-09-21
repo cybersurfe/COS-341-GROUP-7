@@ -77,4 +77,37 @@ public final class Lexer {
         }
     }
 
+    //definitions of tokesn from SPL syntax spec
+
+    //keywords: reserved words
+    private static final Set<String> KEYWORDS = Set.of(
+        "void", "num", "return",
+        "print", "nop", "comment",
+        "if", "then", "else",
+        "do", "while", "until",
+        "not", "and", "or", "eq", "larger", "lesser",
+        "mod", "add", "sub", "mul", "div", "neg"
+    );
+
+    //symbols of grammer
+    private static final Set<String> SYMBOLS = Set.of(
+        "(", ")", "{", "}", ":", ";", "="
+    );
+
+    //numbers accepted => this accounts for neg and pos numbers, floats and ints
+    private static final Pattern NUMS = Pattern.compile(
+        "0" 
+        + "|-?0\\.[0-9]*[1-9]" 
+        + "|-?[1-9][0-9]*\\.[0-9]*[1-9]"
+        + "|-?[1-9][0-9]*"
+    );
+
+    //names => these are like variables defined by the user, we want to not confuse this with any reserved words
+    private static final Pattern NAME = Pattern.compile("#[a-z0-9]*");
+
+    private static final Pattern STRING = Pattern.compile("/\"[,.:?!0-9a-z\\-]*\"");
+
+    private static final boolean STRICT_EOF_BLANK = false;
+
+
 }
