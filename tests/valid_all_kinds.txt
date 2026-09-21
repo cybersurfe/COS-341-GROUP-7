@@ -1,0 +1,8 @@
+#x #y #foo123
+0 5 -5 0.5 -0.5 123 123.45 -123.45
+"hi" "abc" "a:b"
+void num return print nop comment
+if then else do while until
+not and or eq larger lesser
+mod add sub mul div neg
+( ) { } : ; =
