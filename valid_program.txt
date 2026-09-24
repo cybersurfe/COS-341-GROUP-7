@@ -1,0 +1,1 @@
+#a #b : void #f ( #x ) { : : print ( #x ) ; return } num #g ( #y ) { #z : : #z = add ( #y 1 ) ; return ( #z ) } : #a = 5 ; #b = #g ( #a ) ; #f ( #b ) ; print "hi" ; comment "abc" ; nop ; if and ( eq ( #a #b ) not ( lesser ( #a 0 ) ) ) then { print ( neg ( #a ) ) ; } else { nop ; } ; while larger ( #a 0 ) do { #a = sub ( #a 1 ) ; } ; do { #a = mul ( #a 2 ) ; } until eq ( #a 10 ) ;
