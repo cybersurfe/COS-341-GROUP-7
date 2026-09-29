@@ -5,3 +5,9 @@ tests/*.out
 tests/*.expected
 .sdkmanrc
 dk install java 17.0.10-tem
+SPL.txt
+tree.xml
+tests/fail_*.txt
+manifest-spl.txt
+manifest-tests.txt
+
