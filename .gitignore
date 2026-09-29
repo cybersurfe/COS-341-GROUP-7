@@ -1,5 +1,4 @@
 *.class
-*.jar
 *.bak
 tests/*.out
 tests/*.expected
