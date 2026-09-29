@@ -3,3 +3,5 @@
 *.bak
 tests/*.out
 tests/*.expected
+.sdkmanrc
+dk install java 17.0.10-tem
