@@ -1,6 +1,10 @@
 *.class
-*.jar
 *.bak
 tests/*.out
 tests/*.expected
-
+.sdkmanrc
+SPL.txt
+tree.xml
+tests/fail_*.txt
+manifest-spl.txt
+manifest-tests.txt
