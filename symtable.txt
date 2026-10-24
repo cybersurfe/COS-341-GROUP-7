@@ -1,0 +1,30 @@
+SYMBOL TABLE
+sysName  kind       original     level  declNode  inFunction
+sys1     VARIABLE   #x           0      4         -
+sys2     FUNCTION   #f           0      10        -
+sys3     FUNCTION   #g           1      21        sys2
+sys4     FUNCTION   #h           1      73        sys2
+sys5     VARIABLE   #x           2      28        sys3
+sys6     FUNCTION   #j           2      34        sys3
+sys7     VARIABLE   #r           3      41        sys6
+sys8     FUNCTION   #k           2      84        sys4
+sys9     VARIABLE   #r           3      91        sys8
+
+NODE MAP (id of every user-defined-name leaf in tree.xml -> sys name)
+4        -> sys1     (#x)
+10       -> sys2     (#f)
+21       -> sys3     (#g)
+73       -> sys4     (#h)
+28       -> sys5     (#x)
+34       -> sys6     (#j)
+41       -> sys7     (#r)
+49       -> sys7     (#r)
+52       -> sys5     (#x)
+58       -> sys7     (#r)
+84       -> sys8     (#k)
+91       -> sys9     (#r)
+99       -> sys9     (#r)
+102      -> sys1     (#x)
+108      -> sys9     (#r)
+134      -> sys1     (#x)
+138      -> sys2     (#f)
