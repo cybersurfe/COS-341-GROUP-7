@@ -1,10 +1,28 @@
+# Compiled Java
 *.class
 *.bak
-tests/*.out
-tests/*.expected
-.sdkmanrc
+
+# Generated compiler outputs
 SPL.txt
 tree.xml
+tree_renamed.xml
+symtable.txt
+output.cpp
+run.out
+
+# Test artifacts — ignore ALL .out except the hand-written expected ones David owns
+tests/*.out
+!tests/typedValid_*.out
+tests/*.expected
 tests/fail_*.txt
+
+# Build artifacts — rebuild with --release 11 before submission; NEVER commit a local jar
+*.jar
 manifest-spl.txt
 manifest-tests.txt
+
+# Environment / IDE
+.sdkmanrc
+.idea/
+.vscode/
+.DS_Store
