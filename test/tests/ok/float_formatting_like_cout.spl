@@ -1,0 +1,1 @@
+: : print ( div ( 1 4 ) ) ; print "," ; print ( div ( 10 3 ) ) ; print "," ; print ( mul ( 1.5 1.5 ) ) ; print "," ; print ( sub ( 0.1 0.1 ) ) ; print "," ; print ( mul ( 1000000 10 ) ) ; print "," ; print ( div ( 1 3000000 ) ) ;

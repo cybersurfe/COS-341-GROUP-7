@@ -1,0 +1,1 @@
+: num #f ( #a #b ) { : : return ( sub ( #a #b ) ) } : print ( #f ( #f ( 10 3 ) #f ( 5 8 ) ) ) ;

@@ -1,0 +1,1 @@
+#t #i : num #inner ( #a ) { #k : : #k = 0 ; do { #k = add ( #k #a ) ; } while lesser ( #k 6 ) ; return ( #k ) }   : #i = 1 ; while lesser ( #i 4 ) do { #t = add ( #t #inner ( #i ) ) ; #i = add ( #i 1 ) ; } ; print ( #t ) ;

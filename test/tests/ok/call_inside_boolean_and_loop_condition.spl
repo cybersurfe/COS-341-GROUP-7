@@ -1,0 +1,1 @@
+#i : num #sq ( #n ) { : : return ( mul ( #n #n ) ) } : #i = 0 ; while lesser ( #sq ( #i ) 20 ) do { print ( #i ) ; #i = add ( #i 1 ) ; } ;
