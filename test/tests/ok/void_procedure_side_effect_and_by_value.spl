@@ -1,0 +1,1 @@
+#g : void #inc ( #v ) { : : #v = add ( #v 1 ) ; #g = add ( #g 10 ) ; return } : #g = 1 ; #inc ( #g ) ; print ( #g ) ;

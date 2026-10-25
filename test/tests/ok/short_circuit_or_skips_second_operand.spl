@@ -1,0 +1,1 @@
+#c : num #bump ( ) { : : #c = add ( #c 1 ) ; return ( #c ) } : if or ( eq ( 1 1 ) eq ( #bump ( ) 5 ) ) then { print "t" ; } else { print "f" ; } ; print ( #c ) ;

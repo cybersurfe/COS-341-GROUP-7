@@ -1,0 +1,1 @@
+: void #f ( ) { : : #g ( ) ; return } void #g ( ) { : : #f ( ) ; return } : nop ;

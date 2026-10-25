@@ -1,0 +1,1 @@
+: num #f1 ( #a ) { : num #f2 ( #b ) { : num #f3 ( #c ) { : num #f4 ( #d ) { : : return ( add ( #d 1 ) ) } : return ( add ( #f4 ( #c ) 10 ) ) } : return ( add ( #f3 ( #b ) 100 ) ) } : return ( add ( #f2 ( #a ) 1000 ) ) } : print ( #f1 ( 5 ) ) ;

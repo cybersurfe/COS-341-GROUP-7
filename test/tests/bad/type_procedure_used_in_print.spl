@@ -1,0 +1,1 @@
+: void #p ( ) { : : return } : print ( #p ( ) ) ;

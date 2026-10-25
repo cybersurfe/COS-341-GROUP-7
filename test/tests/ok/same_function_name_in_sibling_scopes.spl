@@ -1,0 +1,1 @@
+: void #a ( ) { : void #h ( ) { : : print "a" ; return } : #h ( ) ; return } void #b ( ) { : void #h ( ) { : : print "b" ; return } : #h ( ) ; return } : #a ( ) ; #b ( ) ; #a ( ) ;

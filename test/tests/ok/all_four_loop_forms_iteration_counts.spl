@@ -1,0 +1,1 @@
+#c : : #c = 0 ; while lesser ( 5 3 ) do { #c = add ( #c 1 ) ; } ; print ( #c ) ; until larger ( 5 3 ) do { #c = add ( #c 1 ) ; } ; print ( #c ) ; do { #c = add ( #c 1 ) ; } while lesser ( 5 3 ) ; print ( #c ) ; do { #c = add ( #c 10 ) ; } until larger ( 5 3 ) ; print ( #c ) ;
